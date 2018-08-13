@@ -1,7 +1,5 @@
 <template>
   <div id="app">
-    <font-awesome-icon :icon="['fab', 'github']" size="2x"></font-awesome-icon>
-    <font-awesome-icon :icon="['fab', 'linkedin']" size="2x"></font-awesome-icon>
 
     <NavBar/>
     <router-view/>
@@ -21,7 +19,7 @@ export default {
 </script>
 
 <style lang="scss">
-$primary-color: #444;
+@import "@/assets/_styleUtils.scss";
 
 * {
   box-sizing: border-box;
