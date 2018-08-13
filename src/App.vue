@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+    <font-awesome-icon :icon="['fab', 'github']" size="2x"></font-awesome-icon>
+    <font-awesome-icon :icon="['fab', 'linkedin']" size="2x"></font-awesome-icon>
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
