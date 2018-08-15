@@ -114,7 +114,7 @@ header {
     .portrait {
       width: 250px;
       height: 250px;
-      background: url("/img/portrait.jpg");
+      background: url("/img/portraitL.png");
       border-radius: 50%;
       border: solid 3px $secondary-color;
     }
@@ -223,6 +223,7 @@ header {
     transform: translate3d(100%, 0, 0);
 
     .portrait {
+      background: url("/img/portraitS.png");
       width: 150px;
       height: 150px;
     }
