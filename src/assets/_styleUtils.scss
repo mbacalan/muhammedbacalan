@@ -4,3 +4,27 @@ $secondary-color: #42b983;
 @mixin easeOut {
   transition: all 0.5s ease-out;
 }
+
+@mixin mediaS {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin mediaM {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaL {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin mediaXL {
+  @media screen and (min-width: 1171px) {
+    @content;
+  }
+}

@@ -195,4 +195,47 @@ header {
     }
   }
 }
+
+// Media Queries
+@include mediaM {
+  ul.menu-nav,
+  div.menu-brand {
+    float: none;
+    width: 100%;
+    min-height: 0;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  ul.menu-nav {
+    height: 70vh;
+    transform: translate3d(-100%, 0, 0);
+
+    .nav-link {
+      font-size: 24px;
+    }
+  }
+
+  div.menu-brand {
+    height: 30vh;
+    transform: translate3d(100%, 0, 0);
+
+    .portrait {
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
+
+@include mediaS {
+  ul.menu-nav {
+    height: 65vh;
+  }
+
+  div.menu-brand {
+    height: 35vh;
+  }
+}
 </style>

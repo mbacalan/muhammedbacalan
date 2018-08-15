@@ -66,4 +66,18 @@ h2 {
 a {
   color: #fff;
 }
+
+// Media Queries
+@include mediaM {
+  .home {
+    align-items: center;
+    padding: 2rem;
+  }
+
+  h1.lg {
+    font-size: 3rem;
+    margin-top: 20vh;
+    margin-bottom: 1rem;
+  }
+}
 </style>
