@@ -24,8 +24,7 @@ export default {
 
 .home {
   padding: 4rem;
-  height: 100%;
-  overflow: hidden;
+  text-align: center;
 
   h1 {
     margin-top: 25vh;
@@ -45,39 +44,11 @@ export default {
   }
 }
 
-h1,
-h2 {
-  margin: 0;
-  font-weight: 400;
-
-  &.lg {
-    font-size: 6rem;
-  }
-
-  &.sm {
-    margin-bottom: 2rem;
-  }
-
-  span {
-    color: $secondary-color;
-  }
-}
-
-a {
-  color: #fff;
-}
-
 // Media Queries
 @include mediaM {
   .home {
     align-items: center;
     padding: 2rem;
-  }
-
-  h1.lg {
-    font-size: 3rem;
-    margin-top: 20vh;
-    margin-bottom: 1rem;
   }
 }
 </style>
