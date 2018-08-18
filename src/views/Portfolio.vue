@@ -74,6 +74,7 @@ export default {
       width: 100%;
       height: 70%;
       border: solid 3px white;
+      @include easeOut;
 
       &:hover {
         opacity: 0.5;

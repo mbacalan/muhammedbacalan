@@ -35,6 +35,7 @@ export default {
 
     a {
       padding: 0.5rem;
+      @include easeOut;
 
       &:hover {
         color: $secondary-color;
