@@ -52,10 +52,10 @@ h2 {
   &.sm {
     margin-bottom: 2rem;
   }
+}
 
-  span {
-    color: $secondary-color;
-  }
+.secondary-text {
+  color: $secondary-color;
 }
 
 a {
@@ -65,7 +65,7 @@ a {
 @include mediaM {
   h1.lg {
     font-size: 2.8rem;
-    margin-top: 20vh;
+    margin-top: 10vh;
     margin-bottom: 1rem;
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1 class="lg">Muhammed <span>Bacalan</span></h1>
+    <h1 class="lg">Muhammed <span class="secondary-text">Bacalan</span></h1>
     <h2 class="sm">Front-End Web Developer</h2>
     <div class="icons">
       <a href="https://www.linkedin.com/in/muhammed-bacalan-pen/">
@@ -49,6 +49,10 @@ export default {
   .home {
     align-items: center;
     padding: 2rem;
+
+    h1.lg {
+      margin-top: 20vh;
+    }
   }
 }
 </style>
