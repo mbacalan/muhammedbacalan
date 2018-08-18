@@ -60,6 +60,7 @@ h2 {
 
 a {
   color: #fff;
+  text-decoration: none;
 }
 
 @include mediaM {

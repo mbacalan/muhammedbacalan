@@ -134,7 +134,6 @@ header {
     position: relative;
     font-size: 30px;
     text-transform: uppercase;
-    text-decoration: none;
     padding: 1rem 0;
     font-weight: 300;
     @include easeOut;
