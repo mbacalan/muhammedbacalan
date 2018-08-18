@@ -11,7 +11,7 @@
         <div class="portrait"></div>
       </div>
       <ul class="menu-nav" ref="menuNav">
-        <li class="nav-item" v-for="link in links" :key="link.id">
+        <li class="nav-item" v-on:click="toggleMenu" v-for="link in links" :key="link.id">
           <router-link class="nav-link" :to="link.to">{{ link.name }}</router-link>
         </li>
       </ul>
