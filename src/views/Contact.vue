@@ -5,7 +5,7 @@
     <div class="boxes">
       <div>
         <p>If you want to talk things on phone, feel free to message me on
-          <a href="https://www.linkedin.com/in/muhammed-bacalan-pen/" class="secondary-text">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/muhammed-bacalan/" class="secondary-text">LinkedIn</a>
           and I will share my number! Of course, you can also send a mail to the adress below.</p>
       </div>
       <div>
