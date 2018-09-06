@@ -12,26 +12,49 @@
         </p>
       </div>
 
-      <div class="exp exp-1">
-        <h3>WordPress</h3>
-        <h4>Hobby</h4>
-        <p>A blog about video games, the culture surrounding them and their relationship
-          with the current world order.</p>
-      </div>
-      <div class="exp exp-2">
-        <h3>Mappening.nl</h3>
-        <h4>Correspondant</h4>
-        <p>A worldwide network of young journalists who report how topical issues are
-          experienced in their own country.</p>
-      </div>
-      <div class="exp exp-3">
-        <h3>Web Developer</h3>
-        <h4>Freelance</h4>
-        <p>Creating websites for open-source projects. And for fun!</p>
+      <div class="exp" v-for="exp in experiences" :key="exp.id">
+        <div :class="exp.class">
+          <h3>{{exp.title}}</h3>
+          <h4>{{exp.position}}</h4>
+          <p>{{exp.desc}}</p>
+        </div>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  name: "About",
+  data() {
+    return {
+      experiences: {
+        exp1: {
+          class: "exp1",
+          title: "WordPress",
+          position: "Hobby",
+          desc:
+            "A blog about video games, the culture surrounding them and their relationship with the current world order."
+        },
+        exp2: {
+          class: "exp2",
+          title: "Mappening.nl",
+          position: "Correspondant",
+          desc:
+            "A worldwide network of young journalists who report how topical issues are experienced in their own country."
+        },
+        exp3: {
+          class: "exp3",
+          title: "Web Developer",
+          position: "Freelance",
+          desc: "Creating websites for open-source projects. And for fun!"
+        }
+      }
+    };
+  }
+};
+</script>
+
 
 <style scoped lang="scss">
 @import "@/assets/_styleUtils.scss";
