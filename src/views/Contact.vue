@@ -9,7 +9,8 @@
           and I will share my number! Of course, you can also send a mail to the adress below.</p>
       </div>
       <div>
-        <span class="secondary-text">E-Mail:</span> muhammedbacalan@gmail.com
+        <span class="secondary-text">E-Mail:</span>
+        <a href="mailto:muhammedbacalan@gmail.com">muhammedbacalan@gmail.com</a>
       </div>
     </div>
   </div>
