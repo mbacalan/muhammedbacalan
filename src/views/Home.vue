@@ -1,15 +1,20 @@
 <template>
-  <div class="home">
-    <h1 class="lg">Muhammed <span class="secondary-text">Bacalan</span></h1>
-    <h2 class="sm">Front-End Web Developer</h2>
-    <div class="icons">
-      <a href="https://www.linkedin.com/in/muhammed-bacalan/">
-        <font-awesome-icon :icon="['fab', 'linkedin']" size="2x"></font-awesome-icon>
-      </a>
-      <a href="https://github.com/mbacalan">
-        <font-awesome-icon :icon="['fab', 'github']" size="2x"></font-awesome-icon>
-      </a>
+  <div class="main">
+    <div class="home">
+      <h1 class="lg">Muhammed <span class="secondary-text">Bacalan</span></h1>
+      <h2 class="sm">Front-End Web Developer</h2>
+      <div class="icons">
+        <a href="https://www.linkedin.com/in/muhammed-bacalan/">
+          <font-awesome-icon :icon="['fab', 'linkedin']" size="2x"></font-awesome-icon>
+        </a>
+        <a href="https://github.com/mbacalan">
+          <font-awesome-icon :icon="['fab', 'github']" size="2x"></font-awesome-icon>
+        </a>
+      </div>
     </div>
+    <About/>
+    <Portfolio/>
+    <Contact/>
   </div>
 </template>
 
@@ -33,7 +38,7 @@ export default {
 
 .home {
   padding: 4rem;
-  text-align: center;
+  height: 100vh;
 
   h1 {
     margin-top: 25vh;
@@ -41,6 +46,7 @@ export default {
 
   .icons {
     margin-top: 1rem;
+    text-align: center;
 
     a {
       padding: 0.5rem;

@@ -27,9 +27,11 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   margin: 0;
   font-weight: 400;
+  text-align: center;
 
   &.lg {
     font-size: 6rem;
