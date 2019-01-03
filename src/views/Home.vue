@@ -13,6 +13,21 @@
   </div>
 </template>
 
+<script>
+// @ is an alias to /src
+import About from "@/components/About.vue";
+import Portfolio from "@/components/Portfolio.vue";
+import Contact from "@/components/Contact.vue";
+
+export default {
+  components: {
+    About,
+    Portfolio,
+    Contact
+  }
+};
+</script>
+
 <style lang="scss" scoped>
 @import "@/assets/_styleUtils.scss";
 

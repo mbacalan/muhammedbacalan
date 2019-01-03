@@ -20,6 +20,7 @@
 
 <script>
 export default {
+  name: "Portfolio",
   data() {
     return {
       works: {
