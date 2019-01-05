@@ -6,7 +6,8 @@
       <div>
         <p>If you want to talk things on phone, feel free to message me on
           <a href="https://www.linkedin.com/in/muhammed-bacalan/" class="secondary-text">LinkedIn</a>
-          and I will share my number! Of course, you can also send a mail to the adress below.</p>
+          and I will share my number!</p>
+          <p>Of course, you can also send a mail to the adress below.</p>
       </div>
       <div>
         <span class="secondary-text">E-Mail:</span>
@@ -19,9 +20,8 @@
 <script>
 export default {
   name: "Contact"
-}
+};
 </script>
-
 
 <style scoped lang="scss">
 @import "@/assets/_styleUtils.scss";
