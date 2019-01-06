@@ -2,7 +2,10 @@
   <div class="notfound">
     <h1 class="lg">Not <span class="secondary-text">Found</span></h1>
     <h2 class="sm">This page doesn't exist! Redirecting...</h2>
-    <font-awesome-icon icon="spinner" size="3x" spin/>
+    <font-awesome-icon
+      icon="spinner"
+      size="3x"
+      spin/>
   </div>
 </template>
 

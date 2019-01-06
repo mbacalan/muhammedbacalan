@@ -3,14 +3,23 @@
     <h1 class="lg">My <span class="secondary-text">Work</span></h1>
     <h2 class="sm">Check out some of my work!</h2>
     <div class="projects">
-      <div class="item" v-for="work in works" :key="work.id">
+      <div
+        class="item"
+        v-for="work in works"
+        :key="work.id">
         <a :href="work.url">
-          <img :src="work.img" alt="">
+          <img
+            :src="work.img"
+            alt="">
         </a>
-        <a :href="work.url" class="button-light">
-          <font-awesome-icon icon="eye"/> {{work.name}}
+        <a
+          :href="work.url"
+          class="button-light">
+          <font-awesome-icon icon="eye"/> {{ work.name }}
         </a>
-        <a :href="work.github" class="button-dark">
+        <a
+          :href="work.github"
+          class="button-dark">
           <font-awesome-icon :icon="['fab', 'github']"/> GitHub
         </a>
       </div>

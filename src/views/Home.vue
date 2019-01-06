@@ -5,10 +5,14 @@
       <h2 class="sm">Front-End Web Developer</h2>
       <div class="icons">
         <a href="https://www.linkedin.com/in/muhammed-bacalan/">
-          <font-awesome-icon :icon="['fab', 'linkedin']" size="2x"></font-awesome-icon>
+          <font-awesome-icon
+            :icon="['fab', 'linkedin']"
+            size="2x"/>
         </a>
         <a href="https://github.com/mbacalan">
-          <font-awesome-icon :icon="['fab', 'github']" size="2x"></font-awesome-icon>
+          <font-awesome-icon
+            :icon="['fab', 'github']"
+            size="2x"/>
         </a>
       </div>
     </div>

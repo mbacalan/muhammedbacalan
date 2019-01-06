@@ -3,19 +3,25 @@
     <h2 class="lg">About <span class="secondary-text">Me</span></h2>
     <h3 class="sm">The more you know...</h3>
     <div class="about-info">
-      <img src="../assets/portraitL.png" alt="Muhammed Bacalan" class="portrait">
+      <img
+        src="../assets/portraitL.png"
+        alt="Muhammed Bacalan"
+        class="portrait">
       <div class="bio">
         <p>Hey, I'm Muhammed Bacalan! Currently living in Turkey; I'm a gamer at heart, a journalist on diploma
-          and a front-end web developer for the future. I love the open web so I've been creating open-sourced
-          websites for open-sourced projects. Since then, I'm always looking to learn more and improve!
+        and a front-end web developer for the future. I love the open web so I've been creating open-sourced
+        websites for open-sourced projects. Since then, I'm always looking to learn more and improve!
         </p>
       </div>
 
-      <div class="exp" v-for="exp in experiences" :key="exp.id">
+      <div
+        class="exp"
+        v-for="exp in experiences"
+        :key="exp.id">
         <div :class="exp.class">
-          <h3>{{exp.title}}</h3>
-          <h4>{{exp.position}}</h4>
-          <p>{{exp.desc}}</p>
+          <h3>{{ exp.title }}</h3>
+          <h4>{{ exp.position }}</h4>
+          <p>{{ exp.desc }}</p>
         </div>
       </div>
     </div>

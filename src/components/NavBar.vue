@@ -1,18 +1,33 @@
 <template>
   <header>
-    <div class="menu-button" v-on:click="toggleMenu" ref="menuButton">
-      <div class="menu-line"></div>
-      <div class="menu-line"></div>
-      <div class="menu-line"></div>
+    <div
+      class="menu-button"
+      @click="toggleMenu"
+      ref="menuButton">
+      <div class="menu-line"/>
+      <div class="menu-line"/>
+      <div class="menu-line"/>
     </div>
 
-    <nav class="menu" ref="menu">
-      <div class="menu-brand" ref="menuBrand">
-        <div class="portrait"></div>
+    <nav
+      class="menu"
+      ref="menu">
+      <div
+        class="menu-brand"
+        ref="menuBrand">
+        <div class="portrait"/>
       </div>
-      <ul class="menu-nav" ref="menuNav">
-        <li class="nav-item" v-on:click="toggleMenu" v-for="link in links" :key="link.id">
-          <router-link class="nav-link" :to="link.to">{{ link.name }}</router-link>
+      <ul
+        class="menu-nav"
+        ref="menuNav">
+        <li
+          class="nav-item"
+          @click="toggleMenu"
+          v-for="link in links"
+          :key="link.id">
+          <router-link
+            class="nav-link"
+            :to="link.to">{{ link.name }}</router-link>
         </li>
       </ul>
     </nav>
