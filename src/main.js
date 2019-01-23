@@ -3,11 +3,11 @@ import App from "./App.vue";
 import router from "./router";
 import "./registerServiceWorker";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faEye, faSpinner } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-library.add(faGithub, faLinkedin, faEye, faSpinner);
+library.add(faGithub, faLinkedin, faTwitter, faEye, faSpinner);
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 

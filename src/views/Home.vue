@@ -14,6 +14,11 @@
             :icon="['fab', 'github']"
             size="2x"/>
         </a>
+        <a href="https://twitter.com/muhammed_bc">
+          <font-awesome-icon
+            :icon="['fab', 'twitter']"
+            size="2x"/>
+        </a>
       </div>
     </div>
     <About/>
