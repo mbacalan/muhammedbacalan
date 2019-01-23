@@ -4,21 +4,15 @@
       <h1 class="lg">Muhammed <span class="secondary-text">Bacalan</span></h1>
       <h2 class="sm">Front-End Web Developer</h2>
       <div class="icons">
-        <a href="https://www.linkedin.com/in/muhammed-bacalan/">
-          <font-awesome-icon
-            :icon="['fab', 'linkedin']"
-            size="2x"/>
-        </a>
-        <a href="https://github.com/mbacalan">
-          <font-awesome-icon
-            :icon="['fab', 'github']"
-            size="2x"/>
-        </a>
-        <a href="https://twitter.com/muhammed_bc">
-          <font-awesome-icon
-            :icon="['fab', 'twitter']"
-            size="2x"/>
-        </a>
+        <div
+          v-for="connection in connections"
+          :key="connection.id">
+          <a :href=connection.link>
+            <font-awesome-icon
+              :icon=connection.icon
+              size="2x"/>
+          </a>
+        </div>
       </div>
     </div>
     <About/>
@@ -38,6 +32,24 @@ export default {
     About,
     Portfolio,
     Contact
+  },
+  data() {
+    return {
+      connections: {
+        linkedin: {
+          link: "https://linkedin.com/in/muhammed-bacalan/",
+          icon: ["fab", "linkedin"]
+        },
+        github: {
+          link: "https://github.com/mbacalan",
+          icon: ["fab", "github"]
+        },
+        twitter: {
+          link: "https://twitter.com/muhammed_bc",
+          icon: ["fab", "twitter"]
+        }
+      }
+    };
   }
 };
 </script>
@@ -56,6 +68,10 @@ export default {
   .icons {
     margin-top: 1rem;
     text-align: center;
+
+    div {
+      display: inline;
+    }
 
     a {
       padding: 0.5rem;
