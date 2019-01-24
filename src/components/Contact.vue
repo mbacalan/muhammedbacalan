@@ -9,11 +9,10 @@
             href="https://www.linkedin.com/in/muhammed-bacalan/"
             class="secondary-text">LinkedIn</a>
           and I will share my number!</p>
-        <p>Of course, you can also send a mail to the adress below.</p>
-      </div>
-      <div>
-        <span class="secondary-text">E-Mail:</span>
-        <a href="mailto:muhammedbacalan@gmail.com">muhammedbacalan@gmail.com</a>
+        <p>Of course, you can also send a mail to the adress below;</p>
+        <a
+          class="secondary-text"
+          href="mailto:muhammedbacalan@gmail.com">muhammedbacalan@gmail.com</a>
       </div>
     </div>
   </div>
@@ -36,6 +35,7 @@ export default {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    text-align: center;
     margin-top: 1rem;
 
     div {
