@@ -1,7 +1,7 @@
 <template>
   <div class="about">
-    <h2 class="lg">About <span class="secondary-text">Me</span></h2>
-    <h3 class="sm">The more you know...</h3>
+    <h1 class="lg">About <span class="secondary-text">Me</span></h1>
+    <h2 class="sm">The more you know...</h2>
     <div class="about-info">
       <img
         src="../assets/portraitL.png"
