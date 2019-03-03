@@ -10,7 +10,7 @@
         <a :href="work.url">
           <img
             :src="work.img"
-            alt="">
+            :alt="work.name">
         </a>
         <a
           :href="work.url"
