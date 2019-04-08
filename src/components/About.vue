@@ -8,10 +8,13 @@
         alt="Muhammed Bacalan"
         class="portrait">
       <div class="bio">
-        <p>Hey, I'm Muhammed Bacalan! Currently living in Turkey; I'm a gamer at heart, a journalist on diploma
-        and a front-end web developer for the future. I love the open web so I've been creating open-sourced
-        websites for open-sourced projects. Since then, I'm always looking to learn more and improve!
-        </p>
+        <p>Hey there, I'm Muhammed; a gamer at core, a journalist on diploma and a front-end web developer at heart.</p>
+        <p>I learned web development a tiny bit at university, then I pursued it on my own.
+        After being accepted into <a
+          class="secondary-text"
+          href="https://www.udacity.com/google-scholarships">Google Developer Challenge Scholarship</a>
+          via Udacity, followed by a solid Nanodegree program, I took things more seriously and kept on improving. (Still do!)</p>
+        <p>I love the idea of open and free internet so I've been creating open-sourced websites for open-sourced projects.</p>
       </div>
 
       <div
