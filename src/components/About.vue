@@ -1,5 +1,7 @@
 <template>
-  <div class="about">
+  <div
+    class="about"
+    id="about">
     <h1 class="lg">About <span class="secondary-text">Me</span></h1>
     <h2 class="sm">The more you know...</h2>
     <div class="about-info">

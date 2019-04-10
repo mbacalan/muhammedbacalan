@@ -1,5 +1,7 @@
 <template>
-  <div class="portfolio">
+  <div
+    class="portfolio"
+    id="portfolio">
     <h1 class="lg">
       My
       <span class="secondary-text">Projects</span>
