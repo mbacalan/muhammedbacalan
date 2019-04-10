@@ -1,6 +1,9 @@
 <template>
   <div class="main">
-    <div class="home">
+    <NavBar/>
+    <div
+      class="home"
+      id="home">
       <h1 class="lg">Muhammed <span class="secondary-text">Bacalan</span></h1>
       <h2 class="sm">Front-End Web Developer</h2>
       <div class="icons">
@@ -23,12 +26,14 @@
 
 <script>
 // @ is an alias to /src
+import NavBar from "@/components/NavBar.vue";
 import About from "@/components/About.vue";
 import Portfolio from "@/components/Portfolio.vue";
 import Contact from "@/components/Contact.vue";
 
 export default {
   components: {
+    NavBar,
     About,
     Portfolio,
     Contact

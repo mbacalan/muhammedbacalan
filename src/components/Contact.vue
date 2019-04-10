@@ -1,5 +1,7 @@
 <template>
-  <div class="contact">
+  <div
+    class="contact"
+    id="contact">
     <h1 class="lg">Contact <span class="secondary-text">Me</span></h1>
     <h2 class="sm">Reach me in these ways!</h2>
     <div class="boxes">
