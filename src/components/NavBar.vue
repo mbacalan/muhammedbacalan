@@ -4,7 +4,9 @@
       <li
         v-for="link in links"
         :key="link.id">
-        <a :href="link.to">
+        <a
+          data-scroll
+          :href="link.to">
           {{ link.name }}
         </a>
       </li>
@@ -13,6 +15,9 @@
 </template>
 
 <script>
+import SmoothScroll from "smooth-scroll";
+new SmoothScroll('a[href*="#"]');
+
 export default {
   name: "NavBar",
   data() {
