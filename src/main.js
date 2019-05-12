@@ -3,11 +3,48 @@ import App from "./App.vue";
 import router from "./router";
 import "./registerServiceWorker";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faGithub, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
-import { faEye, faSpinner } from "@fortawesome/free-solid-svg-icons";
+import {
+  faGithub,
+  faLinkedin,
+  faTwitter,
+  faHtml5,
+  faCss3,
+  faJs,
+  faGitAlt,
+  faVuejs,
+  faReact,
+  faNodeJs,
+  faNpm,
+  faYarn,
+  faGulp,
+  faSass
+} from "@fortawesome/free-brands-svg-icons";
+import {
+  faEye,
+  faSpinner,
+  faEllipsisH
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-library.add(faGithub, faLinkedin, faTwitter, faEye, faSpinner);
+library.add(
+  faGithub,
+  faLinkedin,
+  faTwitter,
+  faHtml5,
+  faCss3,
+  faJs,
+  faGitAlt,
+  faVuejs,
+  faReact,
+  faNodeJs,
+  faNpm,
+  faYarn,
+  faGulp,
+  faSass,
+  faEye,
+  faSpinner,
+  faEllipsisH
+);
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
