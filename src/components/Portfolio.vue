@@ -7,6 +7,21 @@
       <span class="secondary-text">Projects</span>
     </h1>
     <h2 class="sm">Check out some of my coding projects</h2>
+    <div class="techs">
+      <h3>Tools & Technologies</h3>
+      <div class="icons">
+        <ul>
+          <li
+            v-for="tech in techs"
+            :key="tech.id">
+            <font-awesome-icon
+              :icon="tech.icon"
+              :title="tech.name"
+              size="2x"/>
+          </li>
+        </ul>
+      </div>
+    </div>
     <div class="projects">
       <div
         class="item"
@@ -26,7 +41,8 @@
         <a
           :href="work.github"
           class="button-dark">
-          <font-awesome-icon :icon="['fab', 'github']"/>GitHub
+          <font-awesome-icon :icon="['fab', 'github']"/>
+          GitHub
         </a>
       </div>
     </div>
@@ -38,6 +54,56 @@ export default {
   name: "Portfolio",
   data() {
     return {
+      techs: {
+        html5: {
+          name: "HTML5",
+          icon: ["fab", "html5"]
+        },
+        css3: {
+          name: "CSS3",
+          icon: ["fab", "css3"]
+        },
+        js: {
+          name: "JavaScript",
+          icon: ["fab", "js"]
+        },
+        git: {
+          name: "Git",
+          icon: ["fab", "git-alt"]
+        },
+        vuejs: {
+          name: "Vue.js",
+          icon: ["fab", "vuejs"]
+        },
+        react: {
+          name: "React.js",
+          icon: ["fab", "react"]
+        },
+        nodejs: {
+          name: "Node.js",
+          icon: ["fab", "node-js"]
+        },
+        npm: {
+          name: "npm",
+          icon: ["fab", "npm"]
+        },
+        yarn: {
+          name: "Yarn",
+          icon: ["fab", "yarn"]
+        },
+        gulp: {
+          name: "Gulp.js",
+          icon: ["fab", "gulp"]
+        },
+        sass: {
+          name: "SASS",
+          icon: ["fab", "sass"]
+        },
+        andMore: {
+          name: "and more!",
+          icon: ["fa", "ellipsis-h"]
+        }
+      },
       works: {
         gw2bot: {
           name: "gw2bot.info",
@@ -80,6 +146,30 @@ export default {
 
 .portfolio {
   padding: 4rem;
+
+  .icons {
+    margin-bottom: 1.5rem;
+    text-align: center;
+
+    ul {
+      border: 1px $secondary-color solid;
+      border-radius: 1rem;
+      width: max-content;
+      padding: 1rem;
+      margin: auto;
+    }
+    li {
+      display: inline;
+      list-style: none;
+      padding: 0.6rem;
+      @include easeOut;
+
+      &:hover {
+        color: $secondary-color;
+        @include easeOut;
+      }
+    }
+  }
 
   .projects {
     display: grid;
