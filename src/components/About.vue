@@ -96,6 +96,17 @@ export default {
       background: lighten($primary-color, 5);
       padding: 0.5rem;
       border-bottom: solid 5px $secondary-color;
+      border-radius: 0.5rem;
+      text-align: center;
+
+      h3 {
+        padding-bottom: 3px;
+        border-bottom: solid 1px $secondary-color;
+      }
+
+      span {
+        color: $secondary-color;
+      }
     }
 
     .exp-1 {

@@ -42,6 +42,7 @@ export default {
     div {
       font-size: 1.3rem;
       border: solid 3px white;
+      border-radius: 0.5rem;
       padding: 0.5rem 1rem;
       margin-bottom: 3rem;
       @include easeOut;

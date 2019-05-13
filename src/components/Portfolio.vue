@@ -6,7 +6,6 @@
       My
       <span class="secondary-text">Projects</span>
     </h1>
-    <h2 class="sm">Check out some of my coding projects</h2>
     <div class="techs">
       <h3>Tools & Technologies</h3>
       <div class="icons">
@@ -148,16 +147,18 @@ export default {
   padding: 4rem;
 
   .icons {
+    margin-top: 0.5rem;
     margin-bottom: 1.5rem;
     text-align: center;
 
     ul {
       border: 1px $secondary-color solid;
-      border-radius: 1rem;
+      border-radius: 0.5rem;
       width: max-content;
       padding: 1rem;
       margin: auto;
     }
+
     li {
       display: inline;
       list-style: none;
@@ -180,6 +181,7 @@ export default {
       width: 100%;
       height: 70%;
       border: solid 3px white;
+      border-radius: 0.5rem;
       @include easeOut;
 
       &:hover {
@@ -195,10 +197,12 @@ export default {
     padding: 0.5rem 1rem;
     border: 0;
     margin-bottom: 0.3rem;
+    @include easeOut;
 
     &:hover {
       background: $secondary-color;
       color: white;
+      @include easeOut;
     }
   }
 
@@ -206,12 +210,16 @@ export default {
     @extend .button;
     background: lighten($primary-color, 50);
     color: black;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
   }
 
   .button-dark {
     @extend .button;
     background: darken($primary-color, 50);
     color: white;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
   }
 }
 
@@ -243,6 +251,16 @@ export default {
 
 @include mediaS {
   .portfolio {
+    .icons {
+      ul {
+        width: auto;
+      }
+
+      li {
+        display: inline-block;
+      }
+    }
+
     .projects {
       grid-template-columns: 2fr;
     }
