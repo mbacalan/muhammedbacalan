@@ -3,10 +3,9 @@
     class="contact"
     id="contact">
     <h1 class="lg">Contact <span class="secondary-text">Me</span></h1>
-    <h2 class="sm">Reach me in these ways!</h2>
     <div class="boxes">
       <div>
-        <p>If you want to talk things on phone, feel free to message me on
+        <p>If you want to talk about things on the phone, message me on
           <a
             href="https://www.linkedin.com/in/muhammed-bacalan/"
             class="secondary-text">LinkedIn</a>
