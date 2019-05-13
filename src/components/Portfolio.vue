@@ -218,7 +218,7 @@ export default {
 @include mediaXL {
   .portfolio {
     .projects {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(5, 1fr);
     }
   }
 }
@@ -226,7 +226,7 @@ export default {
 @include mediaL {
   .portfolio {
     .projects {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
     }
   }
 }
@@ -236,7 +236,7 @@ export default {
     padding: 2rem;
 
     .projects {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 }
@@ -244,7 +244,7 @@ export default {
 @include mediaS {
   .portfolio {
     .projects {
-      grid-template-columns: 1fr;
+      grid-template-columns: 2fr;
     }
   }
 }
