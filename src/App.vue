@@ -6,14 +6,14 @@
 
 <style lang="scss">
 @import "@/assets/_styleUtils.scss";
-@import url("https://fonts.googleapis.com/css?family=Bitter");
+@import url("https://fonts.googleapis.com/css?family=Fira+Mono|Roboto");
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Bitter", serif;
+  font-family: "Roboto", sans-serif;
   background-color: $primary-color;
   color: #fff;
   margin: 0;
@@ -28,13 +28,20 @@ body {
 
 h1,
 h2,
+h3,
+nav {
+  font-family: "Fira Mono", monospace;
+}
+
+h1,
+h2,
 h3 {
   margin: 0;
   font-weight: 400;
   text-align: center;
 
   &.lg {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 
   &.sm {
