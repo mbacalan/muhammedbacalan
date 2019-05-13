@@ -63,11 +63,11 @@ nav {
 
   li {
     display: inline-block;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   a {
-    padding: 1.3rem;
+    padding: 1rem;
     @include easeOut;
 
     &:hover {
@@ -80,7 +80,7 @@ nav {
 @include mediaS {
   nav {
     li {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
 
     a {

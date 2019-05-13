@@ -89,7 +89,7 @@ export default {
 
     .bio {
       grid-area: bio;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
     }
 
     .exp {
@@ -115,10 +115,6 @@ export default {
 @include mediaM {
   .about {
     padding: 2rem;
-
-    .bio p {
-      font-size: 1.3rem;
-    }
 
     .about-info {
       grid-template-areas:
