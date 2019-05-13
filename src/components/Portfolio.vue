@@ -109,31 +109,31 @@ export default {
           name: "gw2bot.info",
           img: require("../assets/gw2bot.png"),
           url: "https://gw2bot.info",
-          github: "https://github.com/pen-mb/gw2bot-site"
+          github: "https://github.com/mbacalan/gw2bot-site"
         },
         gw2rpc: {
           name: "gw2rpc.info",
           img: require("../assets/gw2rpc.png"),
           url: "https://gw2rpc.info",
-          github: "https://github.com/pen-mb/gw2rpc-site"
+          github: "https://github.com/mbacalan/gw2rpc-site"
         },
         fo: {
           name: "fortunateones.tk",
           img: require("../assets/fortunateones.png"),
           url: "https://fortunateones.tk/",
-          github: "https://github.com/pen-mb/fortunateones"
+          github: "https://github.com/mbacalan/fortunateones"
         },
         aurene: {
           name: "AureneBot",
           img: require("../assets/aurenebot.png"),
-          url: "https://github.com/pen-mb/AureneBot",
-          github: "https://github.com/pen-mb/AureneBot"
+          url: "https://github.com/mbacalan/AureneBot",
+          github: "https://github.com/mbacalan/AureneBot"
         },
         mb: {
           name: "This website!",
           img: require("../assets/mb.png"),
           url: "#!",
-          github: "https://github.com/pen-mb/muhammedbacalan"
+          github: "https://github.com/mbacalan/muhammedbacalan"
         }
       }
     };
