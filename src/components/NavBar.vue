@@ -34,10 +34,6 @@ export default {
         portfolio: {
           name: "Portfolio",
           to: "#portfolio"
-        },
-        contact: {
-          name: "Contact",
-          to: "#contact"
         }
       }
     };

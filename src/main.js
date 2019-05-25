@@ -22,7 +22,8 @@ import {
 import {
   faEye,
   faSpinner,
-  faEllipsisH
+  faEllipsisH,
+  faEnvelope
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
@@ -43,7 +44,8 @@ library.add(
   faSass,
   faEye,
   faSpinner,
-  faEllipsisH
+  faEllipsisH,
+  faEnvelope
 );
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);

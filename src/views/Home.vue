@@ -4,15 +4,18 @@
     <div
       class="home"
       id="home">
-      <h1 class="lg">Muhammed <span class="secondary-text">Bacalan</span></h1>
+      <h1 class="lg">
+        Muhammed
+        <span class="secondary-text">Bacalan</span>
+      </h1>
       <h2 class="sm">Front-End Web Developer</h2>
       <div class="icons">
         <div
           v-for="connection in connections"
           :key="connection.id">
-          <a :href=connection.link>
+          <a :href="connection.link">
             <font-awesome-icon
-              :icon=connection.icon
+              :icon="connection.icon"
               size="2x"/>
           </a>
         </div>
@@ -20,7 +23,7 @@
     </div>
     <About/>
     <Portfolio/>
-    <Contact/>
+    <!-- <Contact/> -->
   </div>
 </template>
 
@@ -29,29 +32,31 @@
 import NavBar from "@/components/NavBar.vue";
 import About from "@/components/About.vue";
 import Portfolio from "@/components/Portfolio.vue";
-import Contact from "@/components/Contact.vue";
 
 export default {
   components: {
     NavBar,
     About,
-    Portfolio,
-    Contact
+    Portfolio
   },
   data() {
     return {
       connections: {
-        linkedin: {
-          link: "https://linkedin.com/in/muhammed-bacalan/",
-          icon: ["fab", "linkedin"]
-        },
         github: {
           link: "https://github.com/mbacalan",
           icon: ["fab", "github"]
         },
+        linkedin: {
+          link: "https://linkedin.com/in/muhammed-bacalan/",
+          icon: ["fab", "linkedin"]
+        },
         twitter: {
           link: "https://twitter.com/muhammed_bc",
           icon: ["fab", "twitter"]
+        },
+        mail: {
+          link: "mailto:muhammedbacalan@gmail.com",
+          icon: ["fas", "envelope"]
         }
       }
     };
