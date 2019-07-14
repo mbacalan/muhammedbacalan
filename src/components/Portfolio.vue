@@ -179,7 +179,6 @@ export default {
 
     img {
       width: 100%;
-      height: 70%;
       border: solid 3px white;
       border-radius: 0.5rem;
       @include easeOut;
