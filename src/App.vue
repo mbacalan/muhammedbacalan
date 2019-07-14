@@ -26,6 +26,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.home,
+.portfolio,
+.about {
+  height: 100vh;
+}
+
 h1,
 h2,
 h3,
@@ -59,6 +65,12 @@ a {
 }
 
 @include mediaM {
+  .home,
+  .portfolio,
+  .about {
+    height: auto;
+  }
+
   h1.lg {
     font-size: 2.8rem;
     margin-top: 10vh;

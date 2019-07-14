@@ -69,7 +69,6 @@ export default {
 
 .home {
   padding: 4rem;
-  height: 100vh;
 
   h1 {
     margin-top: 25vh;
