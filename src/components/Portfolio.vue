@@ -1,44 +1,39 @@
 <template>
-  <div
-    class="portfolio"
-    id="portfolio">
-    <h1 class="lg">
-      My
-      <span class="secondary-text">Projects</span>
-    </h1>
-    <div class="techs">
-      <h3>Tools & Technologies</h3>
-      <div class="icons">
-        <ul>
-          <li
-            v-for="tech in techs"
-            :key="tech.id">
-            <font-awesome-icon
-              :icon="tech.icon"
-              :title="tech.name"
-              size="2x"/>
-          </li>
-        </ul>
-      </div>
+  <div class="portfolio">
+    <h1 class="lg">Open Source <span class="secondary-text">Projects</span></h1>
+
+    <div class="icons">
+      <ul class="icons--techs">
+        <li
+          v-for="tech in techs"
+          :key="tech.id">
+          <font-awesome-icon
+            :icon="tech.icon"
+            :title="tech.name"/>
+        </li>
+      </ul>
     </div>
+
     <div class="projects">
       <div
-        class="item"
-        v-for="work in works"
-        :key="work.id">
-        <a :href="work.url">
+        v-for="project in projects"
+        :key="project.id"
+        class="item">
+        <a :href="project.url">
           <img
-            :src="work.img"
-            :alt="work.name">
+            :src="project.img"
+            :alt="project.name">
         </a>
+
         <a
-          :href="work.url"
+          :href="project.url"
           class="button-light">
           <font-awesome-icon icon="eye"/>
-          {{ work.name }}
+          {{ project.name }}
         </a>
+
         <a
-          :href="work.github"
+          :href="project.github"
           class="button-dark">
           <font-awesome-icon :icon="['fab', 'github']"/>
           GitHub
@@ -47,6 +42,94 @@
     </div>
   </div>
 </template>
+
+<style scoped lang="scss">
+@import "@/assets/utils";
+
+.portfolio {
+  margin: 0 16vh;
+
+  h1 {
+    margin-bottom: 15px;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-gap: 0.6rem;
+
+    img {
+      width: 100%;
+      border: solid 3px white;
+      border-radius: 0.5rem;
+      @include easeOut;
+
+      &:hover {
+        opacity: 0.5;
+        border-color: $secondary-color;
+        @include easeOut;
+      }
+    }
+  }
+
+  .button {
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem;
+    @include easeOut;
+
+    &:hover {
+      background: $secondary-color;
+      color: white;
+      @include easeOut;
+    }
+  }
+
+  .button-light {
+    @extend .button;
+    background: lighten($primary-color, 50);
+    color: black;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+
+  .button-dark {
+    @extend .button;
+    background: darken($primary-color, 50);
+    color: white;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+}
+
+@include mediaM {
+  .portfolio {
+    margin: 2rem;
+
+    .projects {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@include mediaL {
+  .portfolio {
+    .projects {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@include mediaXL {
+  .portfolio {
+    .projects {
+      grid-template-columns: repeat(4, 1fr);
+      padding-right: 25%;
+    }
+  }
+}
+</style>
 
 <script>
 export default {
@@ -103,7 +186,7 @@ export default {
           icon: ["fa", "ellipsis-h"]
         }
       },
-      works: {
+      projects: {
         gw2bot: {
           name: "gw2bot.info",
           img: require("../assets/gw2bot.png"),
@@ -115,12 +198,6 @@ export default {
           img: require("../assets/gw2rpc.png"),
           url: "https://gw2rpc.info",
           github: "https://github.com/mbacalan/gw2rpc-site"
-        },
-        fo: {
-          name: "fortunateones.tk",
-          img: require("../assets/fortunateones.png"),
-          url: "https://fortunateones.tk/",
-          github: "https://github.com/mbacalan/fortunateones"
         },
         aurene: {
           name: "AureneBot",
@@ -139,130 +216,3 @@ export default {
   }
 };
 </script>
-
-<style scoped lang="scss">
-@import "@/assets/_styleUtils.scss";
-
-.portfolio {
-  padding: 4rem;
-
-  .icons {
-    margin-top: 0.5rem;
-    margin-bottom: 1.5rem;
-    text-align: center;
-
-    ul {
-      border: 1px $secondary-color solid;
-      border-radius: 0.5rem;
-      width: max-content;
-      padding: 1rem;
-      margin: auto;
-    }
-
-    li {
-      display: inline;
-      list-style: none;
-      padding: 0.6rem;
-      @include easeOut;
-
-      &:hover {
-        color: $secondary-color;
-        @include easeOut;
-      }
-    }
-  }
-
-  .projects {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 0.6rem;
-
-    img {
-      width: 100%;
-      border: solid 3px white;
-      border-radius: 0.5rem;
-      @include easeOut;
-
-      &:hover {
-        opacity: 0.5;
-        border-color: $secondary-color;
-        @include easeOut;
-      }
-    }
-  }
-
-  .button {
-    display: block;
-    padding: 0.5rem 1rem;
-    border: 0;
-    margin-bottom: 0.3rem;
-    @include easeOut;
-
-    &:hover {
-      background: $secondary-color;
-      color: white;
-      @include easeOut;
-    }
-  }
-
-  .button-light {
-    @extend .button;
-    background: lighten($primary-color, 50);
-    color: black;
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
-  }
-
-  .button-dark {
-    @extend .button;
-    background: darken($primary-color, 50);
-    color: white;
-    border-bottom-left-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
-  }
-}
-
-@include mediaXL {
-  .portfolio {
-    .projects {
-      grid-template-columns: repeat(5, 1fr);
-    }
-  }
-}
-
-@include mediaL {
-  .portfolio {
-    .projects {
-      grid-template-columns: repeat(4, 1fr);
-    }
-  }
-}
-
-@include mediaM {
-  .portfolio {
-    padding: 2rem;
-
-    .projects {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-}
-
-@include mediaS {
-  .portfolio {
-    .icons {
-      ul {
-        width: auto;
-      }
-
-      li {
-        display: inline-block;
-      }
-    }
-
-    .projects {
-      grid-template-columns: 2fr;
-    }
-  }
-}
-</style>
