@@ -1,11 +1,11 @@
 <template>
   <div id="app">
     <div class="main">
-      <span class="title sm">Hello, I'm</span>
+      <span class="title">Hello, I'm</span>
 
-      <h1 class="lg">Muhammed <span class="secondary-text">Bacalan,</span></h1>
+      <h1 class="lg">Muhammed <span class="alt-text">Bacalan,</span></h1>
 
-      <h2>Front-End Web Developer.</h2>
+      <h3>Front-End Web Developer.</h3>
     </div>
 
     <About/>
@@ -15,65 +15,29 @@
 </template>
 
 <style lang="scss">
-@import "@/assets/utils";
-@import url("https://fonts.googleapis.com/css?family=Fira+Mono|Roboto");
+@import "@/assets/scss/base";
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  background-color: $primary-color;
-  color: #fff;
-  margin: 0;
-}
-
-h1,
-h2,
-h3 {
-  font-family: "Fira Mono", monospace;
-  font-weight: 400;
-  text-align: left;
-  margin: 0;
-
-  &.lg {
-    font-size: 20px;
-  }
-}
-
-a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.secondary-text {
-  color: $secondary-color;
-}
-
-.main {
-  margin: 4vh 16vh;
-
-  .title {
-    font-family: "Fira Mono", monospace;
-  }
+.main,
+.about,
+.portfolio {
+  margin: 32px;
 }
 
 .icons {
-  text-align: left;
+  text-align: center;
   margin-bottom: 15px;
 
   &--techs,
   &--connections {
     border-bottom: 1px $secondary-color solid;
-    border-radius: 0.5rem;
-    width: auto;
+    border-radius: 8px;
+    width: 100%;
     margin: 0;
-    padding: 0 5px 10px;
+    padding: 0 5px;
 
     li {
-      padding: 0 10px;
-      display: inline;
+      padding: 0 10px 10px;
+      display: inline-block;
       list-style: none;
       @include easeOut;
 
@@ -86,47 +50,47 @@ a {
         color: $secondary-color;
         @include easeOut;
       }
-
-      &:first-child {
-        padding-left: 0;
-      }
-
-      &:last-child {
-        padding-right: 0;
-      }
     }
   }
 }
 
 @include mediaM {
-  h1.lg {
-    font-size: 30px;
-  }
-
-  .main {
-    margin: 2rem;
+  .lg {
+    font-size: 35px;
   }
 
   .icons {
+    text-align: left;
+
     &--techs,
     &--connections {
-      width: auto;
-    }
-  }
-}
-
-@include mediaXL {
-  h1.lg {
-    font-size: 40px;
-  }
-}
-
-@include mediaXL {
-  .icons {
-    &--techs,
-    &--connections {
+      padding: 0 5px 10px;
       width: max-content;
+
+      li {
+        padding: 0 10px;
+
+        &:first-child {
+          padding-left: 0;
+        }
+
+        &:last-child {
+          padding-right: 0;
+        }
+      }
     }
+  }
+}
+
+@include mediaL {
+  .main,
+  .about,
+  .portfolio {
+    margin: 4vh 16vh;
+  }
+
+  .lg {
+    font-size: 45px;
   }
 }
 </style>

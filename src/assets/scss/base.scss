@@ -1,0 +1,36 @@
+@import "utils";
+@import url("https://fonts.googleapis.com/css?family=Fira+Mono|Roboto");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: $primary-color;
+  color: #fff;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+.title {
+  font-family: "Fira Mono", monospace;
+  font-weight: 400;
+  text-align: left;
+  margin: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.lg {
+  font-size: 30px;
+}
+
+.alt-text {
+  color: $secondary-color;
+}

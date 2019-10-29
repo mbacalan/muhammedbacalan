@@ -6,8 +6,7 @@
           v-for="connection in connections"
           :key="connection.id">
           <a :href="connection.link">
-            <font-awesome-icon
-              :icon="connection.icon"/>
+            <font-awesome-icon :icon="connection.icon"/>
           </a>
         </li>
       </ul>
@@ -20,44 +19,41 @@
         followed by a solid
         <a
           href="https://confirm.udacity.com/FRACAMYK"
-          class="secondary-text">Nanodegree program
+          class="alt-text">Nanodegree program
         </a>, I am able to work with web technologies at ease.
       </p>
 
       <p>
         Since then, I created open-source projects (and contributed to existing ones),
-        worked on various business solution apps and Turkey's biggest e-commerce websites.
+        worked on various apps for business solutions and Turkey's biggest e-commerce websites.
       </p>
     </div>
   </div>
 </template>
 
-<style scoped lang="scss">
-@import "@/assets/utils";
+<style lang="scss" scoped>
+@import "@/assets/scss/utils";
 
-.about {
-  margin: 0 16vh;
+.bio {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+  margin-bottom: 15px;
 
-  .bio {
-    font-size: 20px;
-    line-height: 1.5;
-    text-align: left;
-    padding-right: 25%;
-    margin-bottom: 15px;
-
-    p {
-      margin: 10px 0;
-    }
+  p {
+    margin: 10px 0;
   }
 }
 
 @include mediaM {
-  .about {
-    margin: 2rem;
+  .bio {
+    font-size: 20px;
+  }
+}
 
-    .bio {
-      padding-right: 0;
-    }
+@include mediaL {
+  .bio {
+    max-width: 60%;
   }
 }
 </style>

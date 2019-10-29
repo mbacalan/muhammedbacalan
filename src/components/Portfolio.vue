@@ -1,6 +1,6 @@
 <template>
   <div class="portfolio">
-    <h1 class="lg">Open Source <span class="secondary-text">Projects</span></h1>
+    <h1 class="lg">Open Source <span class="alt-text">Projects</span></h1>
 
     <div class="icons">
       <ul class="icons--techs">
@@ -43,90 +43,71 @@
   </div>
 </template>
 
-<style scoped lang="scss">
-@import "@/assets/utils";
+<style lang="scss" scoped>
+@import "@/assets/scss/utils";
 
-.portfolio {
-  margin: 0 16vh;
+h1 {
+  margin-bottom: 15px;
+}
 
-  h1 {
-    margin-bottom: 15px;
-  }
+.projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 15px;
 
-  .projects {
-    display: grid;
-    grid-template-columns: 2fr;
-    grid-gap: 0.6rem;
-
-    img {
-      width: 100%;
-      border: solid 3px white;
-      border-radius: 0.5rem;
-      @include easeOut;
-
-      &:hover {
-        opacity: 0.5;
-        border-color: $secondary-color;
-        @include easeOut;
-      }
-    }
-  }
-
-  .button {
-    display: block;
-    padding: 0.5rem 1rem;
-    border: 0;
-    margin-bottom: 0.3rem;
+  img {
+    width: 100%;
+    border: solid 3px white;
+    border-radius: 8px;
     @include easeOut;
 
     &:hover {
-      background: $secondary-color;
-      color: white;
+      opacity: 0.5;
+      border-color: $secondary-color;
       @include easeOut;
     }
   }
+}
 
-  .button-light {
-    @extend .button;
-    background: lighten($primary-color, 50);
-    color: black;
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
-  }
+.button {
+  display: block;
+  padding: 8px 16px;
+  border: 0;
+  margin-bottom: 5px;
+  @include easeOut;
 
-  .button-dark {
-    @extend .button;
-    background: darken($primary-color, 50);
+  &:hover {
+    background: $secondary-color;
     color: white;
-    border-bottom-left-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
+    @include easeOut;
   }
 }
 
-@include mediaM {
-  .portfolio {
-    margin: 2rem;
+.button-light {
+  @extend .button;
+  background: lighten($primary-color, 50);
+  color: black;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
 
-    .projects {
-      grid-template-columns: 1fr;
-    }
+.button-dark {
+  @extend .button;
+  background: darken($primary-color, 50);
+  color: white;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+@include mediaM {
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
 @include mediaL {
-  .portfolio {
-    .projects {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-}
-
-@include mediaXL {
-  .portfolio {
-    .projects {
-      grid-template-columns: repeat(4, 1fr);
-      padding-right: 25%;
-    }
+  .projects {
+    max-width: 60%;
   }
 }
 </style>
@@ -189,25 +170,25 @@ export default {
       projects: {
         gw2bot: {
           name: "gw2bot.info",
-          img: require("../assets/gw2bot.png"),
+          img: require("../assets/img/gw2bot.png"),
           url: "https://gw2bot.info",
           github: "https://github.com/mbacalan/gw2bot-site"
         },
         gw2rpc: {
           name: "gw2rpc.info",
-          img: require("../assets/gw2rpc.png"),
+          img: require("../assets/img/gw2rpc.png"),
           url: "https://gw2rpc.info",
           github: "https://github.com/mbacalan/gw2rpc-site"
         },
         aurene: {
           name: "AureneBot",
-          img: require("../assets/aurenebot.png"),
+          img: require("../assets/img/aurenebot.png"),
           url: "https://github.com/mbacalan/AureneBot",
           github: "https://github.com/mbacalan/AureneBot"
         },
         mb: {
           name: "This website!",
-          img: require("../assets/mb.png"),
+          img: require("../assets/img/mb.png"),
           url: "#!",
           github: "https://github.com/mbacalan/muhammedbacalan"
         }
