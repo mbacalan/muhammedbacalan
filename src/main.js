@@ -1,6 +1,5 @@
 import Vue from "vue";
 import App from "./App.vue";
-import "./registerServiceWorker";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faGithub,
