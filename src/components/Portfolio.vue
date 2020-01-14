@@ -1,6 +1,6 @@
 <template>
   <div class="portfolio">
-    <h1 class="lg">Open Source <span class="alt-text">Projects</span></h1>
+    <h1 class="lg">{{ $t("portfolioTitleBig") }}<span class="alt-text">{{ $t("portfolioTitleSmall") }}</span></h1>
 
     <div class="icons">
       <ul class="icons--techs">

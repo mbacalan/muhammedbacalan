@@ -1,4 +1,5 @@
 import Vue from "vue";
+import i18n from "./i18n";
 import App from "./App.vue";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
@@ -19,7 +20,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faEye,
-  faSpinner,
   faEllipsisH,
   faEnvelope
 } from "@fortawesome/free-solid-svg-icons";
@@ -41,7 +41,6 @@ library.add(
   faGulp,
   faSass,
   faEye,
-  faSpinner,
   faEllipsisH,
   faEnvelope
 );
@@ -50,4 +49,7 @@ Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 Vue.config.productionTip = false;
 
-new Vue({ render: h => h(App) }).$mount("#app");
+new Vue({
+  i18n,
+  render: h => h(App)
+}).$mount("#app");

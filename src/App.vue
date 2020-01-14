@@ -1,11 +1,13 @@
 <template>
   <div id="app">
     <div class="main">
-      <span class="title">Hello, I'm</span>
+      <span class="title">{{ $t("hello") }}</span>
 
       <h1 class="lg">Muhammed <span class="alt-text">Bacalan,</span></h1>
 
       <h3>Front-End Web Developer.</h3>
+
+      <LocaleSwitcher />
     </div>
 
     <About/>
@@ -20,6 +22,7 @@
 .main,
 .about,
 .portfolio {
+  position: relative;
   margin: 32px;
 }
 
@@ -99,11 +102,13 @@
 // @ is an alias to /src
 import About from "@/components/About.vue";
 import Portfolio from "@/components/Portfolio.vue";
+import LocaleSwitcher from "@/components/LocaleSwitcher.vue";
 
 export default {
   components: {
     About,
-    Portfolio
+    Portfolio,
+    LocaleSwitcher
   }
 };
 </script>

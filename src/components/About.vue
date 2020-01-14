@@ -14,18 +14,15 @@
 
     <div class="bio">
       <p>
-        I started learning web development at university and continued with self-motivation.
-        After being accepted into Google Developer Challenge Scholarship via Udacity,
-        followed by a solid
+        {{ $t("bioStart") }}
         <a
           href="https://confirm.udacity.com/FRACAMYK"
-          class="alt-text">Nanodegree program
-        </a>, I am able to work with web technologies at ease.
+          class="alt-text">{{ $t("bioLink") }}
+        </a>
       </p>
 
       <p>
-        Since then, I created open-source projects (and contributed to existing ones),
-        worked on various apps for business solutions and Turkey's biggest e-commerce websites.
+        {{ $t("bioEnd") }}
       </p>
     </div>
   </div>
